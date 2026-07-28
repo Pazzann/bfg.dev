@@ -126,7 +126,7 @@
 		flex: 1;
 		justify-content: center;
 		align-items: center;
-		padding: 1.5rem 1rem;
+		padding: 0.5rem 1rem;
 	}
 
 	.splash {
@@ -138,12 +138,15 @@
 	}
 
 	.splash :global(.portrait) {
-		--ascii-size: clamp(0.26rem, 0.85vw, 0.5rem);
+		/* The art is ~100 cols x 60 rows, so height is the binding constraint on a
+		   wide screen. Sizing off vh as well keeps it filling the viewport instead
+		   of sitting small in the middle of it. */
+		--ascii-size: clamp(0.26rem, min(1.15vh, 0.95vw), 0.95rem);
 	}
 
 	.terminal {
 		font-family: 'Courier Prime', monospace;
-		font-size: clamp(1rem, 2.2vw, 1.5rem);
+		font-size: clamp(1rem, 2.2vw, 1.7rem);
 		line-height: 1.7;
 		/* Reserve the height so the menu appearing doesn't shift the art. */
 		min-height: 9rem;
