@@ -30,7 +30,7 @@
 			description: 'A project for the Engineering Design first-year course for the IMechE foundation design challenge 2024/2025. \n' +
                 'The task was to create a device without the use of any programmable circuits that will move straight to the target, then wait for 10-15 seconds, and then return to the starting position backwards.',
 			media: '/imechE.png',
-            href: 'https://media.licdn.com/dms/image/v2/D562DAQFjT3nbYB_ItA/profile-treasury-image-shrink_8192_8192/B56Zh2.LnrHQAg-/0/1754342669702?e=1786021200&v=beta&t=acj2j3OJIMrSPBqPxFZuHX20tDpak0_6ahshMaVJfyo',
+            href: 'https://github.com/Pazzann/bfg.dev/blob/master/static/posterimeche.jpg',
 			start: '2024',
             end: '2025'
 		}
