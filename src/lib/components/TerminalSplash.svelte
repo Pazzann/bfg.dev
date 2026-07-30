@@ -38,7 +38,7 @@
 		menu = [],
 		back,
 		typeSpeed = 40,
-		cols = 100,
+		cols = 150,
 		metric = 'sobel',
 		gamma = 1.5,
 		lineDelay = 14
@@ -66,7 +66,7 @@
 			{lineDelay}
 			eager
 			oncomplete={() => (artDone = true)}
-			class="portrait"
+			class="ascii-portrait"
 		/>
 
 		<div class="terminal">
@@ -137,12 +137,7 @@
 		justify-content: center;
 	}
 
-	.splash :global(.portrait) {
-		/* The art is ~100 cols x 60 rows, so height is the binding constraint on a
-		   wide screen. Sizing off vh as well keeps it filling the viewport instead
-		   of sitting small in the middle of it. */
-		--ascii-size: clamp(0.26rem, min(1.15vh, 0.95vw), 0.95rem);
-	}
+	/* Art sizing lives in app.css as .ascii-portrait, shared with the project pages. */
 
 	.terminal {
 		font-family: 'Courier Prime', monospace;

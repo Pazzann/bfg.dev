@@ -9,7 +9,23 @@
 	color: white;
 }
 
-body {
+/*
+ * Fits ASCII art to a target box instead of a fixed character size, so changing
+ * `cols` only changes detail, never the rendered dimensions. AsciiImage publishes
+ * --cols/--rows; a Fira Mono cell is 0.6em wide, so the art measures
+ * cols * 0.6 * size across and rows * size down. Layouts override --fit-w/--fit-h.
+ */
+.ascii-portrait {
+	--fit-w: 44vw;
+	--fit-h: 74vh;
+	--ascii-size: min(calc(var(--fit-w) / var(--cols) / 0.6), calc(var(--fit-h) / var(--rows)));
+}
 
+/* Stacked layout: full width, shorter height budget. */
+@media (max-width: 800px) {
+	.ascii-portrait {
+		--fit-w: 86vw;
+		--fit-h: 45vh;
+	}
 }
 

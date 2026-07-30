@@ -5,7 +5,8 @@
 		{ label: 'cd ~/projects', href: '/projects' },
 		{ label: 'cat ~/cv.pdf', href: '/cv.pdf', download: 'anton-matiash-cv.pdf' },
 		{ label: 'ls ~/contact', href: '/contact' },
-		{ label: 'curl socials', href: 'https://bio.link/boyfromgod' }
+        { label: 'tail ~/interests', href: '/interests' },
+		{ label: 'wget socials', href: 'https://bio.link/boyfromgod' }
 	];
 </script>
 

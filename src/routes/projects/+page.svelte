@@ -14,7 +14,7 @@
 </svelte:head>
 
 <TerminalSplash
-	image="/hitoru.jpg"
+	image="/aska.jpg"
 	lines={['What project types are you interested in?']}
 	{menu}
 	back={{ label: 'cd ../', href: '/' }}

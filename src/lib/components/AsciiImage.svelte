@@ -267,7 +267,14 @@
 </script>
 
 <!-- Markup stays on one line: stray whitespace would render inside `pre`. -->
-<pre bind:this={node} class={className} class:mono={!color} role="img" aria-label={alt}>{#each lines as runs, i (i)}<span
+<pre
+	bind:this={node}
+	class={className}
+	class:mono={!color}
+	role="img"
+	aria-label={alt}
+	style="--cols: {cols}; --rows: {lines.length || 1}"
+>{#each lines as runs, i (i)}<span
 			class="ln"
 			class:show={i < revealed}>{#each runs as run, j (j)}{#if run.c}<span
 					style="color:{run.c}">{run.t}</span
