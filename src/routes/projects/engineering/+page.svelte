@@ -11,6 +11,14 @@
 			start: '2025'
 		},
         {
+            title: 'Backdrivable harmonic drive',
+            description: 'A prototype harmonic drive that can be back-driven.',
+            media: '/harmonic.gif',
+            href: 'https://lnkd.in/p/eiBGA7gm',
+            start: '2026',
+            end: '2026'
+        },
+        {
             title: 'Wheelchair Accessory',
             description: 'A desk accessory that can be put on any wheelchair(with little modifications) and be used to hold a laptop, or anything else a disabled school student might need. Max rated weight of stuff on top is 5 kg.',
             media: '/wheelchair.png',
