@@ -4,7 +4,7 @@
 	// Placeholder entries — replace with real projects.
 	const projects: Project[] = [
 		{
-			title: 'Shitty Belousov–Zhabotinsky reaction study',
+			title: 'Belousov–Zhabotinsky reaction study',
 			description: 'No references, in Russian, but plots are so cool there! Hope you can forgive young me, but I really want to share it.',
 			media: '/bzexample.gif',
             href: 'https://figshare.com/articles/conference_contribution/___-_____/16910188?file=31473176',
